@@ -1,0 +1,122 @@
+
+<!-- saved from url=(0034)http://localhost:8080/anonym_jb51/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="description" content="隐藏你的网址 匿名网址">
+	<meta name="keywords" content="anonymous,link,url,redirect,forum,board,script,domain,external,hompage">
+	<title>匿名网址 | link to other sites anonymously</title>
+
+	<link rel="stylesheet" type="text/css" href="./index_files/style.css">
+	<script type="text/javascript" src="./index_files/anonymizerTool.js"></script>
+</head>
+
+	
+<body>
+	<div id="page">
+		<div id="header"></div>			
+		
+		<div id="content">
+			<div class="lang_content">
+
+			<h1>匿名网址</h1>
+			
+			<div align="center" class="nav_symbols">
+				<div style="width: 180px; float: left;">
+					<a href="http://localhost:8080/anonym_jb51/#singleLink"><img src="./index_files/link.gif" alt=" anonymize a single link" title=" anonymize a single link"></a><br>
+					<a href="http://localhost:8080/anonym_jb51/#singleLink">单个网址</a>
+				</div>
+			
+				<div style="width: 180px; float: left; margin-left: 20px;">
+					<a href="http://localhost:8080/anonym_jb51/#multiLink"><img src="./index_files/script.gif" alt="Script to anonymize all the links on your homepage or board" title="Script to anonymize all the links on your homepage or board"></a><br>
+
+					<a href="http://localhost:8080/anonym_jb51/#multiLink"> 整页替换</a>
+				</div>
+				<div style="width: 180px; float: left; margin-left: 20px;">
+					<a href="http://localhost:8080/anonym_jb51/#info"><img src="./index_files/why.gif" alt="Why use 匿名网址?" title="Why use 匿名网址?"></a><br>
+					<a href="http://localhost:8080/anonym_jb51/#info">为什么用匿名网址?</a>
+				</div>
+			
+			</div>
+
+			<div class="clearer"></div>
+			<br>
+
+			<h2 id="singleLink">单个网址</h2>
+			<p>输入你要匿名跳转的网址，然后点 "生成网址".</p>
+
+			<form name="theform" onsubmit="return go();" action="http://localhost:8080/anonym_jb51/#">
+				<fieldset>
+					<h3>输入网址:</h3>
+
+					<input class="anonym_input" type="text" maxlength="255" name="nick" value="http://">
+					<input class="anonym_FormSubmit" type="button" onclick="javascript:go()" value="生成网址"><br><br>
+			
+					<h3>生成的匿名网址:</h3>
+					<textarea class="anonym_textarea" name="thelink1" wrap="soft" cols="66" rows="1" style="height: 30px; overflow: auto;"></textarea><br>
+					<br><h3>生成的匿名网址 HTML 格式:</h3>
+					<textarea class="anonym_textarea_big" name="thelink2" wrap="soft" cols="66" rows="2" style="height: 30px; overflow: auto;"></textarea><br>
+					<br><h3>生成的匿名网址 UBB 格式:</h3>
+
+					<textarea class="anonym_textarea_big" name="thelink3" wrap="soft" cols="66" rows="2" style="height: 30px; overflow: auto;"></textarea><br>
+			
+				</fieldset>
+			</form>
+			<br>
+
+			<h2 id="multiLink">页面批量替换</h2>
+			<p>在页面中嵌入下列JS代码，批量隐藏页面中的网址来源。部分不需要匿名的网址可以在下面关键词配置.</p>
+		
+			<form name="anonymizerForm" onsubmit="generateCode(&#39;anonymizerForm&#39;, &#39;embeddingCode&#39;); return false;" action="http://localhost:8080/anonym_jb51/#">
+				<fieldset class="generationData">
+					<label for="keywordsInput" accesskey="1" style="padding-top: 4px; display: block;">不需要匿名的域名 / 关键字 (多个用半角逗号分割: domain1.tld, domain2.tld, keyword1, ...):</label>
+					<input type="text" id="keywordsInput" name="keywords" class="anonym_input"><br>
+					<input type="submit" id="submitButton" value="配置" class="anonym_FormSubmit">
+
+			
+				</fieldset>
+			</form>
+			
+			<form name="displayResult" onsubmit="return false;" action="http://localhost:8080/anonym_jb51/#">
+				<fieldset class="embeddingData">
+					<label for="embeddingCode" accesskey="2" style="padding-top: 4px; display: block;">复制下面的代码到页面(在 &lt;/body&gt; 标签之前)。 </label>
+			
+					<textarea class="anonym_textarea" cols="66" rows="8" id="embeddingCode" name="embeddingCode"></textarea>
+					<input class="anonym_FormSubmit" type="button" name="markAll" id="markAll" value=" 全选 " onclick="document.displayResult.embeddingCode.select();">
+
+				</fieldset>
+			</form>
+		
+			
+			<br>
+			<script type="text/javascript">
+			   generateCode("anonymizerForm", "embeddingCode");
+			</script>
+			
+			<h2 id="info">使用 匿名网址 隐藏网址来源</h2>
+			<p>有很多网站不想把来源地址透露给目标网址<br>
+			只要简单的使用以下方式隐藏:<br>
+
+			<a href="http://localhost:8080/anonym_jb51/demos/anonym/?http://www.ccw8.com/" target="_blank">http://localhost:8080/anonym_jb51/demos/anonym/?http://www.ccw8.com/</a>
+			这种方式将会匿名访问 <a href="http://www.ccw8.com/">西西网</a> 目标网址的只会统计到 localhost:8080/anonym_jb51/demos/anonym.</p>
+			
+
+			<br>
+			匿名网址 隐藏网址来源!
+
+			<div class="clearer"></div>
+
+			</div>
+		</div>
+
+		
+		<div id="footer">
+			<div id="footer_inside">
+				<p>
+				技术支持 <a href="http://www.ccw8.com/">西西网</a>, an <a href="http://www.ccw8.com/demos/anonym/">演示地址</a>
+				</p><div class="sp16"></div>
+			</div>
+		</div>
+		
+	</div>
+
+</body></html>
