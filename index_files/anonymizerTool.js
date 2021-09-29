@@ -1,4 +1,4 @@
-var PIMPLINK = "localhost:8080/anonym_jb51/demos/anonym"; //CHANGE THIS TO YOU WEBSITE
+var PIMPLINK = "https://sangjk.github.io/wites/"; //CHANGE THIS TO YOU WEBSITE
 
 function go()
 {
