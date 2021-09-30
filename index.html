@@ -1,4 +1,6 @@
-
+<?PHP
+include "config.php";
+$s = $_SERVER['QUERY_STRING'];
 <!-- saved from url=(0034)https://sangjk.github.io/wites/in.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	
@@ -120,3 +122,60 @@
 	</div>
 
 </body></html>
+else 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="refresh" content="$wait; URL=$s">
+	<title>$sitename - free dereferer service</title>
+	<style type="text/css">
+	html {
+		background: #f9f9f9;
+	}
+	body {
+		background: #fff;
+		color: #666;
+		font: 14px tahoma, verdana, arial, sans-serif;
+		margin: 5% 10%;
+		text-align: center;
+	}
+	
+	a {
+		color: #f80;
+	}
+	
+	h1 {
+		color: #690;
+	}
+	
+	#container {
+		background: #f9f9f9;
+		line-height: 2.4;
+		padding: 1em;
+	}
+	
+	p#url {
+		font-weight: bold;
+		overflow: hidden;
+		width: 100%;
+	}
+	
+	</style>
+</head>
+
+<body>
+
+	<h1>$sitename</h1>
+	<div id="container">
+
+		
+		<p>正在转向 ...<br />
+		<p id="url"><a href="$s">$s</a></p>
+
+		<hr />
+		<p><a href="http://$url/">$sitename</a></p>
+		
+	</div>
+
+ 
+</body>
+</html>";
