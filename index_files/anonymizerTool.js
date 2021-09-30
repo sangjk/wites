@@ -9,14 +9,14 @@ function go()
 	  return 0;
 	}
 
-	var displayURL = x.replace("http://", "");
+	var displayURL = x.replace("", "");
 
 	y = document.location.search.substring(1,11);
 	y = "";
 
-	document.theform.thelink1.value = "https://"+PIMPLINK+"/?" + x + "" + y;
-	document.theform.thelink2.value = "<a href=\"https://"+PIMPLINK+"/?" + x + "" + y + "\">" + displayURL + "</a>";
-	document.theform.thelink3.value = "[url=https://"+PIMPLINK+"/?" + x  + "" + y + "]" + displayURL + "[/url]";
+	document.theform.thelink1.value = "https://"+PIMPLINK+"?" + x + "" + y;
+	document.theform.thelink2.value = "<a href=\"https://"+PIMPLINK+"?" + x + "" + y + "\">" + displayURL + "</a>";
+	document.theform.thelink3.value = "[url=https://"+PIMPLINK+"?" + x  + "" + y + "]" + displayURL + "[/url]";
 
 	return false;
 }
