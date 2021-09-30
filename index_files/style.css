@@ -1,0 +1,150 @@
+
+
+body { 
+	background: #f9f9f9; text-align:center;
+	font-size: 87.5%; line-height:165%;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", tahoma, verdana, arial, sans-serif;
+	color: #666; 
+}
+
+h1,h2,h3,p,form{margin:0;padding:0;}
+
+#page { 
+	background: #fff; 
+	margin: 0px auto; 
+	padding-bottom: 10px; 
+	width: 700px; text-align:left;
+}
+
+#header { 
+	margin: 0px 20px; 
+}
+
+#content {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.lang_content {
+	font-size: 13px;
+}
+
+.nav_symbols img {
+	border: 2px solid #999;
+}
+
+input {line-height:26px;height:28px;}
+
+#content h1 {
+	margin: 10px 0px;
+	padding-bottom: 12px;
+	border-bottom: 1px dotted #999;
+	font: bold 36px Arial, Helvetica, sans-serif;
+	color: #690;
+	text-align: center; line-height:48px;
+}
+
+h2 {
+	font:bold 18px Arial, Helvetica, sans-serif;
+	padding: 0.7em 0;
+	color: #690;
+}
+
+h3 {
+	font:bold 14px Arial, Helvetica, sans-serif;
+	padding: 0.7em 0;
+	color: #555;
+}
+
+#footer {
+	margin-top: 30px;
+	clear: both;
+	text-align: center;
+}
+
+#footer_inside {
+	font-size: 12px;
+}
+
+img {
+	border: 0; 
+}
+
+a {
+	color: #f80;
+	
+}
+	
+a:hover {
+	text-decoration: none;
+}
+
+.de, .es, .en, .nl, .ru {
+	border: 1px solid #666;
+	margin: 10px;
+	height: 210px;
+	text-align: center;
+	width: 164px;
+	background: #404040;
+}
+
+.de, .es, .en, .nl, .ru {
+	float: left;
+}
+
+.inside p {
+	font-size: .88em;
+	
+}
+
+.de a, .es a, .en a, .nl a, .ru a {
+	font-weight: bold;
+}
+
+.clearer {
+	clear: both;
+}
+
+.sp16 {
+	height: 16px;
+}
+
+fieldset {
+	border: 0;
+	font: bold 11px Verdana, arial, helvetica, sans-serif;
+	padding: 8px 0;
+}
+
+label {
+	display: block;font-size:12px;
+	font-weight: normal;
+	margin-bottom: 8px;
+}
+
+textarea {
+	display: block;
+	background: #f9f9f9;
+	margin-bottom: 6px;
+	overflow: auto;
+	width: 600px;
+}
+	
+input, button, textarea {
+	border: 1px solid #ddd;
+}
+
+input#keywordsInput {
+	background: #f9f9f9;
+	margin-bottom: 6px;
+	width: 570px;
+}
+
+input#markAll, input#submitButton, .anonym_FormSubmit {
+	background: #690;
+	color: #fff;
+}
+
+.anonym_input {
+	background: #f9f9f9;
+	width:400px; 
+}
