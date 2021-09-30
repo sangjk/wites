@@ -1,6 +1,9 @@
 
 <!-- saved from url=(0034)https://sangjk.github.io/wites/in.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+include "config.php";
+$s = $_SERVER['QUERY_STRING'];
+if ($s==null) {echo "<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	
 	<meta name="description" content="隐藏你的网址 匿名网址">
 	<meta name="keywords" content="anonymous,link,url,redirect,forum,board,script,domain,external,hompage">
@@ -120,7 +123,7 @@
 	</div>
 
 </body></html>
-$s = $_SERVER['QUERY_STRING'];
+
 else echo "
 <head>
 	<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>
